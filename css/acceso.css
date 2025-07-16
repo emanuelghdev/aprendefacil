@@ -1,0 +1,256 @@
+    /* Estilo para el cuerpo de la página */
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    /* Estilo para el contenedor del formulario login */
+    #form-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Estilo para el article donde está el formulario login */
+    #form-login {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Estilo para el botón de volver a la página principal */
+    .boton-volver {
+        display: inline-block;
+        padding: 15px 25px;
+        border: 2px solid black; 
+        margin: 0px 0px 30px 25px;
+        font-size: 30px;
+        background-color: #080163;
+        color: white;
+        border-radius: 100px; 
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Estilo para el botón de volver a la página principal al pasar el ratón por encima */
+    .boton-volver:hover {
+        transform: scale(1.2);
+    }
+
+    /* Estilo para el div que contiene a los botones que muestran más o menos alumnos por pantalla */
+    .botones-pantalla{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    /* Estilo para los botones que muestran más o menos alumnos por pantalla */
+    .boton-pantalla{
+        display: inline-block;
+        padding: 15px 25px;
+        border: 2px solid black;
+        font-size: 30px;
+        background-color: #080163;
+        color: white;
+        border-radius: 100px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Definición de la animación */
+    @keyframes agrandar {
+        0% {
+        transform: scale(1); /* Escala inicial (normal) */
+        }
+        100% {
+        transform: scale(1.6); /* Escala final (agrandado) */
+        }
+    }
+
+    #mensaje-login{
+        border-radius: 100px;
+        background-color: #e9cfd9;
+        border: solid 5px red;
+        animation: agrandar 1s infinite alternate;
+    }
+
+    #mensaje-login:hover{
+        transform: none;
+    }
+
+    /* Estilo para el botón de ver más pictogramas */
+    #posPictos{
+        margin-left: 20px;
+    }
+
+    /* Estilo para el botón de ver pictogramas anteriores */
+    #prevPictos{
+        margin-right: 20px;
+    }
+
+    /* Estilo para el formulario login */
+    .formulario {
+        display: grid;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    /* Estilo para los h2, p y el texto del botón submit en el acceso alumnos */
+    h2, p, .submit, #-login-incorrecto{
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: bold;
+    }
+
+    /* Estilo para los label del formulario */
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    /* Estilo para los input del formulario */
+    input {
+        font-family: "Verdana", sans-serif;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Estilo para el botón de iniciar sesión */
+    input[type="submit"] {
+        font-size: 16px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: #080163;
+        color: white;
+        cursor: pointer;
+        width: 70%;
+        justify-self: center;
+    }
+
+    /* Estilo para el botón de iniciar sesión al pasar el ratón por encima */
+    input[type="submit"]:hover, .boton-pantalla:hover {
+        transform: scale(1.15);
+    }
+
+    /* Estilo para los mensajes de error al iniciar sesión */
+    p {
+        margin-top: 30px;
+        line-height: 30px;
+        color: red;
+    }
+
+    /* Estilo para la pantalla de feedback al iniciar sesion*/
+    #-login-incorrecto{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    /* Estilo para la seccion que contiene pictogramas */
+    .pictogramas {
+        display: flex;
+        margin:auto;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    /* Estilo para la seccion de pictogrmas ya seleccionados */
+    .pictogramas-seleccionados {
+        display:flex;
+        width: 70%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo para las botones que contienen imagenes del inicio de sesion con pictogramas */
+    .pictograma, .pictograma-seleccionado {
+        margin: 5px 10px;
+        border: none;
+        text-align: center;
+        background-color: #e9cfd9;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo para el article de cada pictograma */
+    .pictograma{
+        cursor: pointer;
+        transform-origin: bottom;
+    }
+
+    /* Estilo para el article de cada pictograma al pasar el raton por encima */
+    .pictograma:hover{
+        border: 2px solid black;
+    }
+
+    /* Estilo para el article de cada pictograma seleccionado */
+    .pictograma-seleccionado{
+        border: 2px solid black;
+    }
+
+    /* Estilo para las imagenes dentro del article del pictograma */
+    .pictogramas img{
+        width: 150px;
+        height: 150px;
+        margin: 30px 5px;
+    }
+
+    /* Estilo para las imagenes dentro del article del pictograma seleccionado */
+    .pictograma-seleccionado img{
+        visibility: hidden;
+        width: 120px;
+        height: 120px;
+        margin: 20px 5px;
+    }
+
+    /* Estilo para el boton del formulario dentro de los pictogramas seleccionados */
+    .pictogramas-seleccionados .formulario{
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    /* Estilo para los inputs que almacenan el nombre de los pictogramas */
+    .hidden {
+        display: none;
+        width:0%;
+        height:0%;
+    }
+
+    #pictogramas-pulsadores{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #pictogramas-pulsadores button{
+        margin: 5px;
+    }
+
+    /* Estilo para el article de cada pictograma al pasar el raton por encima */
+    #pictogramas-pulsadores .pictograma:hover, #pictogramas-pulsadores .pictograma:focus{
+        border: 10px solid #080163;
+        transform: none;
+    }
+
+    #pictogramas-pulsadores .pictograma.clicked{
+        background-color: #080163;
+    }
+
+    

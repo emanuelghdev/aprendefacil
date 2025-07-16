@@ -1,0 +1,261 @@
+    /* Estilo para el main*/
+    main {
+        margin-bottom: 30px;
+    }
+   
+    /* Estilo para el formulario dentro del main*/
+    main .formulario {
+        width: 60%;
+        background-color: #e9cfd9;;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 5px;
+        padding: 40px;
+        margin: 20px auto 50px;
+    }
+
+    /* Estilo para todos los enlaces */
+    a {
+        text-decoration: none; 
+    }
+
+    /* Estilo para los enlace al pasar el ratón por encima */
+    header a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilo para los enlaces y botones al pasar el raton por encima */
+    button:hover, input[type="submit"], input[type="file"]{
+        text-decoration: none;
+        cursor: pointer; 
+    }
+
+    /* Estilo para el titulo secundario */
+    main #tituloSecundario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Estilo para el h2 del titulo secundario */
+    main .formulario #tituloSecundario h2{
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+
+    /* Estilo para el h2 del titulo secundario cuando no está dentro del formulario */
+    main #tituloSecundario h2{
+        font-size: 40px;
+    }
+
+    /* Estilo para el botón de volver a la página anterior */
+    .boton-volver {
+        display: inline-block;
+        padding: 15px 25px;
+        border: 2px solid black; 
+        margin: 0px 0px 30px 25px;
+        font-size: 30px;
+        background-color: #080163;
+        color: white;
+        border-radius: 100px; 
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Estilo para el botón de volver a la página anterior al pasar el ratón por encima */
+    .boton-volver:hover {
+        transform: scale(1.2);
+    }
+
+    /* Estilo para el botón de modificar tarea */
+    .boton-modificar button {
+        display: flex;
+        padding: 15px 25px;
+        border: 2px solid black;
+        margin: 0px 0px 30px 25px;
+        background-color: #080163;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    button[type="button"]{
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid black;
+        background-color: #080163;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /* Estilo de los campos */
+    .campo {
+        margin-bottom: 30px;
+    }
+
+    /* Estilo de los titulos de los campos */
+    .titulo-campo {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    /* Estilo del article que contiene los botones para editar el perfil de un alumno o asignar comandas */
+    .botones-alumno{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Estilo para los inputs de todos los campos */
+    input[type="text"], input[type="password"], input[type="file"], textarea, fieldset {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 15px;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Estilo para los input de la fecha */
+    input[type="date"]{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* Estilo para el boton que envia informacion */
+    .enviar {
+        text-align: center;
+    }
+
+    /* Estilo para todos los botones */
+    #boton-editar, #boton-cerrarEdicion, #boton-comandas, input[type="submit"] {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid black;
+        background-color: #080163;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /* Estilo para el boton que envia el formulario */
+    input[type="submit"]{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /* Estilo para el boton que envia el formulario al pasar el ratón por encima */
+    input[type="submit"]:hover {
+        transform: scale(1.2);
+    }
+
+    /* Estilo para los placeholder de todos los campos de entrada */
+    input::placeholder, textarea::placeholder {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    /* Estilo para todos los textareas */
+    textarea {
+        resize: none;
+    }
+
+    /* Estilo para los mensajes de error al registrar un formulario */
+    p{
+        margin-bottom: 30px;
+        line-height: 30px;
+        color: black;
+        box-sizing: 10 0 white;
+        padding-left: 7px;
+        font-style: italic;
+    }
+
+    /* Estilo para el boton de editar y cerrar la edicion */
+    #boton-editar, #boton-cerrarEdicion, #boton-comandas{
+        margin-bottom: 40px;
+    }
+
+    /* Estilo para los campos de pictogramas */
+    #pictograma_1, #pictograma_2{
+        margin-bottom: 30px;
+    }
+
+    /* Estilo  para el fieldset*/
+    #fieldset-alumnos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border: none;
+    }
+
+    /* Estilo para el formulario de asignar tarea */
+    #formulario-asignar{
+        width: 80%;
+        background-color: white;;
+    }
+
+    /* Estilo para el campo de las fecha en asignar tarea */
+    #tarea-fecha{
+        margin-bottom: 0px;
+    }
+
+    /* Estilo para la section que contiene a cada alumno en asignar tarea */
+    .alumno{
+        padding: 20px;
+        margin: 20px;
+        background-color: #e9cfd9;
+        border-radius: 10px;
+    }
+
+    /* Estilo para el nombre de cada alumno en asignar tarea */
+    #nombre-alumno{
+        display: block;
+        align-items: center;
+        margin: 20px 0px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    /* Estilo para la section que contiene el paso de una tarea */
+    #paso {
+        margin-top: 20px;
+    }
+
+    /* Estilo para la section que contiene todos los elementos de un paso */
+    .elementos_paso {
+        border: 5px solid white;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para el boton de eliminar paso en el paso 1 */
+    #eliminar_paso_1 {
+        display: none;
+    }
+
+    /* Estilo para el boton que añade un paso */
+    #enviar-paso {
+        display: flex;
+        margin: 30px 0px;
+    }
+
+    /* Estilo para el boton que elimina un paso */
+    #quitar-paso {
+        padding: 5px 2px;
+    }
+
+    /* Estilo para el boton que elimina un paso */
+    #quitar-paso button {
+        transform-origin: left bottom;
+    }
+
+    /* Estilo para los inputs que almacenan el nombre de los pictogramas */
+    .hidden {
+        display: none;
+        width:0%;
+        height:0%;
+    }

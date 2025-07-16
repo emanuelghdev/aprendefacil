@@ -1,0 +1,197 @@
+
+    /* Estilo para todos los enlaces, los botones y el input que confirman una busqueda */
+    a, button, #boton-buscar {
+        text-decoration: none;
+        cursor: pointer; 
+    }
+
+    /* Estilo para todos los botones y el input que confirman una busqueda */
+    button, #boton-buscar {
+        display: inline-block;
+        padding: 10px 10px;
+        border: 2px solid black;
+        background-color: #080163;
+        color: white;
+    }
+
+    /* Estilo para los enlace al pasar el ratón por encima */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilo para el div que contiene todos los elementos del main */
+    .div-principal{
+        display: flex;
+        align-content: start;
+    }
+
+    /* Estilo para la seccion que contiene las diferentes paginas de administrador */
+    .opciones-admin{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 50px;
+    }
+
+    /* Estilo para los botones de las diferentes paginas de administrador */
+    .opciones-admin button{
+        width: 175px;
+        height: 80px;
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid black;
+        background-color: #080163;
+        color: white;
+    }
+
+    /* Estilo para los botones de las diferentes paginas de administrador al pasar el ratón por encima */
+    button:hover{
+        transform: scale(1.1);
+    }
+
+    /* Estilo para la seccion que muestra el contenido correspondiente al adminsitrador */
+    .tareas, .profesores, .alumnos{
+        margin: auto;
+        margin-top: 0px;
+        height: 706px;
+    }
+
+    /* Estilo para los alumnos que sean encargados de las comandas */
+    #encargado-comandas a:hover{
+        text-decoration-color: white;
+    }
+
+    /* Estilo para el div de los alumnos que sean encargados de las comandas */
+    #encargado-comandas div{
+        color: white;
+        border: 2px solid black;
+        background-color: #080163;
+    }
+
+    /* Estilo para la seccion que muestra la lista de profesores y la de alumnos */
+    .profesores, .alumnos{
+        width: 75%;
+    }
+
+    /* Estilo para los h2 de la secciones que muestra el contenido correspondiente al administrador */
+    .tareas h2, .profesores h2, .alumnos h2{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Estilo para las barras de busqueda del contenido correspondiente */
+    .tareas .barra-busqueda, .profesores .barra-busqueda, .alumnos .barra-busqueda{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    /* Estilo para las barras de busqueda del contenido correspondiente */
+    .profesores .barra-busqueda, .alumnos .barra-busqueda{
+        margin-right: 50px;
+    }
+
+    /* Estilo para los formularios dentro de las barras de busqueda */
+    .tareas .barra-busqueda form, .profesores .barra-busqueda form, .alumnos .barra-busqueda form{
+        display:flex;
+        justify-content:start;
+    }
+
+    /* Estilo para la tabla que muestra las tareas */
+    .tareas table{
+        border: 3px solid black;
+        table-layout: auto;
+        width: 600px;
+        margin: 20px;
+    }
+
+    /* Estilo para el encabezado de la tabla que muestra las tareas */
+    .tareas table th{
+        border: 2px solid black;
+        padding: 5px;
+    }
+
+    /* Estilo para las celdas de datos de la tabla que muestra las tareas */
+    .tareas table td{
+        text-align: left;
+        border: 1px solid black;
+        background-color: #ffffff;
+    }
+
+    /* Estilo para los enlaces de la tabla que muestra las tareas */
+    .tareas table a, .tareas table #enlace-profesores{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Estilo para los enlaces de la tabla que muestra el contenido correspondiente */
+    .tareas table td a, .lista-personal .profesor a, .lista-personal .alumno a{
+        color: inherit;
+    }
+
+    /* Estilo para los enlaces de la tabla que muestra el contenido correspondiente al pasar el ratón por encima */
+    .tareas table td:hover, .lista-personal .profesor:hover, .lista-personal .alumno:hover{
+        transform: scale(1.05);
+    }
+
+    /* Estilo para el h3 de las celdas de datos de la tabla que muestra las tareas */
+    .tareas table td h3{
+        margin: 5px;
+    }
+
+    /* Estilo para los formularios del contenido correspondiente */
+    .tareas form, .profesores form, .alumnos form, .pagination form{
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+    }
+
+    /* Estilo para el span dentro de los formularios del contenido correspondiente */
+    .tareas form span, .profesores form span, .alumnos form span, .pagination form span{
+        margin: 10px;
+    }
+
+    /* Estilo para las listas de profesores y alumnos */
+    .lista-personal{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+
+    /* Estilo para los div de las lista de profesores y alumnos */
+    .lista-personal .profesor div, .lista-personal .alumno div{
+        border-style: solid;
+        padding:2px 2px;
+        margin:5px;
+        width:130px;
+        height:165px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilo para las imagenes de los div de las lista de profesores y alumnos */
+    .lista-personal .profesor div img, .lista-personal .alumno div img{
+        margin: auto;
+    }
+
+    /* Estilo para los h3 de los div de las lista de profesores y alumnos */
+    .lista-personal .profesor div h3, .lista-personal .alumno div h3{
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    /* Estilo para los botones de enviar formulario */
+    button[type="submit"] {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid black;
+        background-color: #080163;
+        color: white;
+    }
+
+    /* Estilo para los botones de enviar formulario al pasar el ratón por encima */
+    button[type="submit"]:hover, #boton-buscar:hover {
+        transform: scale(1.1);
+    }

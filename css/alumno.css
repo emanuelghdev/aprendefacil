@@ -1,0 +1,237 @@
+    /* Estilo para el cuerpo */
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    /* Estilo para el main */
+    main {
+        padding: 10px;
+    }
+
+    /* Estilo para todos los enlaces, los botones y el input que confirma una busqueda */
+    a, button, #boton-buscar {
+        text-decoration: none;
+        cursor: pointer; 
+    }
+
+    /* Estilo para los enlace al pasar el ratón por encima */
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilo para la seccion que contiene todos los alumnos */
+    .tareas {
+        margin-top: 20px;;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Estilo para todos los h2 del main */
+    main h2 {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    /* Estilo para todos los h3 del main */
+    main h3{
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+    }
+
+    /* Estilo para todos los enlaces del main */
+    main a {
+        text-decoration: none;
+        color: black; 
+    }
+
+    /* Estilo para todos los enlaces del main al pasar el ratón por encima */
+    main a:hover {
+        transform: scale(1.1);
+    }
+
+    /* Estilo para el article que muestra el alumno correspondiente */
+    .tarea {
+        width: 400px;
+        margin: 0px auto;
+        text-align: center;
+        background-color: #e9cfd9;
+        padding: 5px;
+        padding-top: 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo para las imagenes del article que muestra el alumno correspondiente */
+    .tarea img {
+        width: 200px;
+        height: 150px;
+        background-color: #e9cfd9;
+    }
+   
+    /* Estilo para el texto dentro de la tarea */
+    .tarea p {
+        padding: 5px;
+        margin: 10px;
+        font-weight: bold;
+        font-size: 28px; 
+        text-transform: uppercase;
+    }
+
+    /* Estilo para el article que muestra el alumno correspondiente al pasar el ratón por encima */
+    .tarea:hover{
+        border: 2px solid black;
+    }
+
+    /* Estilo para el div que contiene a los botones que muestran más o menos alumnos por pantalla */
+    .botones-pantalla{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    /* Estilo para los botones que muestran más o menos alumnos por pantalla */
+    .boton-pantalla{
+        display: inline-block;
+        padding: 15px 25px;
+        border: 2px solid black;
+        font-size: 40px;
+        background-color: #080163;
+        color: white;
+        border-radius: 100px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Estilo para los botones dentro de los enlaces */
+    .boton-pantalla button{
+        background-color: #080163;
+        border: none;
+    }
+
+    /* Estilo para los botones que muestran más o menos alumnos por pantalla al pasar el ratón por encima */
+    .boton-pantalla:hover{
+        transform: scale(1.2);
+    }
+
+    #casa{
+        margin: 0px 0px 30px 25px;
+    }
+
+    /* Estilo para el botón de ver más tareas */
+    #posTareas{
+        margin-right: 60px;
+    }
+    
+    /* Estilo para el botón de ver alumnos tareas */
+    #prevTareas{
+        margin-left: 60px;
+    }
+
+    /* Estilo para el main */
+    main.detalles-tarea {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Estilo para la sección de la imagen */
+    .imagen-tarea {
+        width: 60%;
+        margin-left: auto;
+    }
+
+    /* Estilo para la imagen */
+    .imagen-tarea img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px; 
+    }
+
+    /* Estilo para la sección de botones */
+    .botones-tarea {
+        display: flex;
+        flex-direction: column;  /* Coloca los botones uno encima del otro */
+        gap: 10px; 
+        margin-right: auto;
+    }
+
+    /* Estilo para los botones */
+    .botones-tarea button {
+        width: 100%; 
+        margin: 5px; /* Ajusta el margen entre los botones según sea necesario */
+        padding: 15px 25px;
+        font-size: 16px;
+        border: 2px solid black;
+        background-color: #080163;
+        color: white;
+        border-radius: 10px; 
+        cursor: pointer;
+    }
+
+
+    /* Estilo para el footer */
+    footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 30px;
+        
+    }
+
+    /* Estilo para los botones del footer */
+    footer button{
+        margin: 0;
+        height: 200px;
+        width: 250px;
+        padding: 10px 20px;
+        border: 2px solid black;
+        background-color: #080163;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+    
+    /* Estilo para todos los botones al pasar el ratón por encima */
+    footer button:hover{
+        transform: scale(1.1);
+    }
+
+    #boton-comandas, #boton-comandas img{
+        background-color: #080163;
+    }
+
+    #boton-comandas h3{
+        color: white;
+        font-weight: bold;
+        font-size: 28px;    
+    }
+
+    #boton-comandas:hover{
+        border: 2px solid black;
+        text-decoration: none;
+    }
+
+    .boton-con-imagen{
+        transform-origin: bottom left;
+    }
+
+    /* Estilo para la imagen dentro del botón */
+    .boton-con-imagen img {
+        max-width: 100%;
+        max-height: 80%;
+        margin-bottom: 10px; /* Ajusta el margen según sea necesario */
+    }
+
+    #imagen-profesor-comanda{
+        border-radius: 50%;
+    }
