@@ -4,7 +4,7 @@ Piloto de una plataforma web de **apoyo educativo** para un colegio de niños co
 
 ## 📄 Descripción del proyecto
 
-**Aprendefacil** es una plataforma diseñada para el **Colegio de Educación Especial San Rafael** para gestionar agendas individualizadas y actividades educativas adaptadas. Permite:
+**Aprendefacil** es una plataforma diseñada para el **Colegio de Educación Especial San Rafael** para gestionar agendas individualizadas y actividades educativas adaptadas. Permite, a grandes rasgos:
 
 <div align="center">
     <img src="doc/imagenes/Inicio.png" width="100%" alt="Página de inicio"/>
@@ -13,7 +13,7 @@ Piloto de una plataforma web de **apoyo educativo** para un colegio de niños co
 
 - **A educadores y administradores**
 
-    - Crear y monitorear tareas
+    - Crear y monitorizar tareas
 
     - Asignar roles (existen diferentes estudiantes encargados de tareas específicas)
 
@@ -41,11 +41,11 @@ Piloto de una plataforma web de **apoyo educativo** para un colegio de niños co
 
 ## 🛠️ Características principales
 
-## 🚪 Login de alumnos
+### 🚪 Login de alumnos
 
 Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilidad dados por el centro, se ha eliminado por completo el concepto del campo `usuario` y los alumnos **acceden a su perfil eligiendo la tarjeta que contiene su nombre y su cara** de la página de inicio. Además, permitimos que a cada alumno se le asigne su **modo preferente de visualización** en el login: texto (contraseña), pictogramas (secuencia visual) o barrido (scanning + pulsador).
 
-### Login con texto
+#### Login con texto
 
 - El alumno introduce una **contraseña/clave sencilla**, normalmente asociada a alguno de sus gustos o aficiones personales, elegida por sus educadores.
 
@@ -55,7 +55,7 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
     <img src="doc/imagenes/Login_texto.png" width="75%" alt="Inicio de sesión mediante texto"/>
 </div>
 
-### Login con pictogramas
+#### Login con pictogramas
 
 - El usuario se autentica seleccionando una **secuencia determinada de tres pictogramas**.
 
@@ -67,7 +67,7 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
     <img src="doc/imagenes/Login_pictos.png" width="75%" alt="Inicio de sesión mediante pictogramas"/>
 </div>
 
-### Login con barrido
+#### Login con barrido
 
 - En la interfaz (UI) se recorren elementos interactuables (pictogramas) en un orden y velocidad configurable, de forma que un **pulsador externo** (o tecla grande) puede seleccionar con facilidad el elemento activo.
 
@@ -83,7 +83,7 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
 
 ---
 
-## 📋 Agenda de tareas
+### 📋 Agenda de tareas
 
 - **Núcleo operativo** del alumno, con organización visual y secuenciada de su agenda.
 
@@ -105,13 +105,13 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
 
 ---
 
-## 💬 Chats de tarea / comunicación directa
+### 💬 Chats de tarea / comunicación directa
 
 - Los chats de las tareas son **conversaciones vinculadas a cada tarea** concreta para discutir progreso, dudas o adjuntar evidencias.
 
 - Cada alumno y educador tiene también **chats de comunicación directa** para apoyo, avisos o consultas puntuales.
 
-### Chat de texto
+#### Chat de texto
 
 - Chat estándar que utiliza **texto como medio para la comunicación**, ya sea en el chat de una tarea o en un chat de comunicación directa.
 
@@ -119,7 +119,7 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
     <img src="doc/imagenes/Chat_tarea_texto.gif" width="75%" alt="Chat de texto: usado por un educador en una tarea"/>
 </div>
 
-### Chat de imágenes
+#### Chat de imágenes
 
 - Chat pictográfico utilizado para **alumnos con necesidad de evidencia visual**, soportado tanto en el chat de una tarea como en el chat de comunicación directa.
 
@@ -132,7 +132,7 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
 
 ---
 
-## ✍️ Gestión de tareas
+### ✍️ Gestión de tareas
 
 - El administrador y el educador pueden ver el **catálogo completo de tareas**, buscar una, aplicar filtros y acceder a los chats en formato texto y en formato imágenes de cada una.
 
@@ -153,7 +153,7 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
 
 ---
 
-## 🧒 Gestión de alumnos
+### 🧒 Gestión de alumnos
 
 - El administrador puede gestionar el perfil de cada alumno, **asignar roles** y editar su información.
 
@@ -172,14 +172,14 @@ Para facilitar el inicio de sesión y cumplir con los protocolos de accesibilida
 
 ---
 
-## 🗃️ Gestión de multimedia
+### 🗃️ Gestión de multimedia
 
 - El administrador puede almacenar, editar y gestionar todo el contenido multimedia de la web: audios, **vídeos de instrucciones**, fotos, evidencias y **pictogramas (ARASAAC)** de tareas, chat o login.
 
 - El sistema permite **subidas masivas** con mapeo de etiquetas y asignación directa a tareas.
 
 <div align="center">
-    <img src="doc/imagenes/Gestión_multimedia.png" width="75%" alt="Panel de gestión multimedia del administrador"/>
+    <img src="doc/imagenes/Gestion_multimedia.png" width="75%" alt="Panel de gestión multimedia del administrador"/>
 </div>
 
 
