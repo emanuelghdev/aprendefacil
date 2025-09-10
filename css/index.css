@@ -50,7 +50,7 @@
     /* Estilo para todos los enlaces del main */
     main a {
         text-decoration: none;
-        color: black; 
+        color: var(--color-texto); 
     }
 
     /* Estilo para todos los enlaces del main al pasar el ratón por encima */
@@ -78,7 +78,7 @@
 
     /* Estilo para el article que muestra el alumno correspondiente al pasar el ratón por encima */
     .alumno:hover, .alumno:focus{
-        border: 2px solid black;
+        border: var(--borde);
     }
 
     /* Estilo para el div que contiene a los botones que muestran más o menos alumnos por pantalla */
@@ -92,10 +92,10 @@
     .boton-pantalla{
         display: inline-block;
         padding: 15px 25px;
-        border: 2px solid black;
+        border: var(--borde);
         font-size: 40px;
-        background-color: #080163;
-        color: white;
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 100px;
         text-decoration: none;
         cursor: pointer;

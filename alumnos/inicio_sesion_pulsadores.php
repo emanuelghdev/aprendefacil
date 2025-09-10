@@ -7,6 +7,7 @@
         <title>Iniciar Sesión</title>
         <script src="../javascript/funciones_basicas.js"></script>
 		<script src="../javascript/validar_formularios.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
         <link rel="stylesheet" type="text/css" href="../css/header.css">
         <link rel="stylesheet" type="text/css" href="../css/acceso.css">
     </head>

@@ -145,7 +145,7 @@
         text-transform: uppercase;
         letter-spacing: 1.5px;
         line-height: 1.5;
-        color: black;
+        color: var(--color-texto);
     }
 
     /* Estilo para el div que contiene el perfil del usuario que ha iniciado sesion */
@@ -164,14 +164,14 @@
     #perfil-login a, #perfil-login-reducido a{
         display: flex;
         justify-content: flex-start;
-        color: black;
+        color: var(--color-texto);
     }
 
     /* Estilo para el h2 del enlace del perfil del usuario que ha iniciado sesion */
     #perfil-login h2, #perfil-login-reducido h2{
         margin-left: 5px;
         font-size: 20px;
-        color: black;
+        color: var(--color-texto);
     }
 
     #perfil-login a:hover, #perfil-login-reducido a:hover{
@@ -190,9 +190,9 @@
         display: inline-block;
         margin: 15px;
         padding: 0px 15px;
-        border: 2px solid black;
-        background-color: #080163;
-        color: white;
+        border: var(--borde);
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 100px;
     }
 
@@ -231,7 +231,7 @@
     /* Estilo para el enlace de la barra lateral */
     .barra-lateral a{
         display: block;
-        color: white;
+        color: var(--color-fondo);
         text-decoration: none;
     }
 

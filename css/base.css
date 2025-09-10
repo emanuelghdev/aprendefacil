@@ -1,0 +1,8 @@
+    /* Esquema de colores */
+    :root {
+        --color-principal: #e9cfd9;
+        --color-fondo: #fcfcfc;
+        --color-texto: #111810;
+        --color-botones: #080163;
+        --borde: 2px solid black;
+    }

@@ -24,11 +24,11 @@
     .boton-volver {
         display: inline-block;
         padding: 15px 25px;
-        border: 2px solid black; 
+        border: var(--borde); 
         margin: 0px 0px 30px 25px;
         font-size: 30px;
-        background-color: #080163;
-        color: white;
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 100px; 
         text-decoration: none;
         cursor: pointer;
@@ -50,10 +50,10 @@
     .boton-pantalla{
         display: inline-block;
         padding: 15px 25px;
-        border: 2px solid black;
+        border: var(--borde);
         font-size: 30px;
-        background-color: #080163;
-        color: white;
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 100px;
         text-decoration: none;
         cursor: pointer;
@@ -93,7 +93,7 @@
     /* Estilo para el formulario login */
     .formulario {
         display: grid;
-        background-color: white;
+        background-color: var(--color-fondo);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -125,10 +125,10 @@
     /* Estilo para el botón de iniciar sesión */
     input[type="submit"] {
         font-size: 16px;
-        border: 2px solid black;
+        border: var(--borde);
         border-radius: 20px;
-        background-color: #080163;
-        color: white;
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         cursor: pointer;
         width: 70%;
         justify-self: center;
@@ -155,7 +155,7 @@
         height: 100vh;
         margin: 0;
         padding: 0;
-        background-color: white;
+        background-color: var(--color-fondo);
         align-items: center;
         justify-content: center;
         z-index: 9999;
@@ -198,12 +198,12 @@
 
     /* Estilo para el article de cada pictograma al pasar el raton por encima */
     .pictograma:hover{
-        border: 2px solid black;
+        border: var(--borde);
     }
 
     /* Estilo para el article de cada pictograma seleccionado */
     .pictograma-seleccionado{
-        border: 2px solid black;
+        border: var(--borde);
     }
 
     /* Estilo para las imagenes dentro del article del pictograma */
@@ -245,12 +245,12 @@
 
     /* Estilo para el article de cada pictograma al pasar el raton por encima */
     #pictogramas-pulsadores .pictograma:hover, #pictogramas-pulsadores .pictograma:focus{
-        border: 10px solid #080163;
+        border: 10px solid var(--color-botones);
         transform: none;
     }
 
     #pictogramas-pulsadores .pictograma.clicked{
-        background-color: #080163;
+        background-color: var(--color-botones);
     }
 
     

@@ -9,9 +9,9 @@
     button, #boton-buscar {
         display: inline-block;
         padding: 10px 10px;
-        border: 2px solid black;
-        background-color: #080163;
-        color: white;
+        border: var(--borde);
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
     }
 
     /* Estilo para los enlace al pasar el ratón por encima */
@@ -39,9 +39,9 @@
         height: 80px;
         display: inline-block;
         padding: 5px 10px;
-        border: 2px solid black;
-        background-color: #080163;
-        color: white;
+        border: var(--borde);
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
     }
 
     /* Estilo para los botones de las diferentes paginas de administrador al pasar el ratón por encima */
@@ -58,14 +58,14 @@
 
     /* Estilo para los alumnos que sean encargados de las comandas */
     #encargado-comandas a:hover{
-        text-decoration-color: white;
+        text-decoration-color: var(--color-fondo);
     }
 
     /* Estilo para el div de los alumnos que sean encargados de las comandas */
     #encargado-comandas div{
-        color: white;
-        border: 2px solid black;
-        background-color: #080163;
+        color: var(--color-fondo);
+        border: var(--borde);
+        background-color: var(--color-botones);
     }
 
     /* Estilo para la seccion que muestra la lista de profesores y la de alumnos */
@@ -107,7 +107,7 @@
 
     /* Estilo para el encabezado de la tabla que muestra las tareas */
     .tareas table th{
-        border: 2px solid black;
+        border: var(--borde);
         padding: 5px;
     }
 
@@ -186,9 +186,9 @@
     button[type="submit"] {
         display: inline-block;
         padding: 5px 10px;
-        border: 2px solid black;
-        background-color: #080163;
-        color: white;
+        border: var(--borde);
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
     }
 
     /* Estilo para los botones de enviar formulario al pasar el ratón por encima */

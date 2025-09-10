@@ -45,7 +45,7 @@
     /* Estilo para todos los enlaces del main */
     main a {
         text-decoration: none;
-        color: black; 
+        color: var(--color-texto); 
     }
 
     /* Estilo para todos los enlaces del main al pasar el ratón por encima */
@@ -82,7 +82,7 @@
 
     /* Estilo para el article que muestra el alumno correspondiente al pasar el ratón por encima */
     .tarea:hover{
-        border: 2px solid black;
+        border: var(--borde);
     }
 
 
@@ -101,8 +101,8 @@
         padding: 15px;
         margin-right: 30px;
         margin-left: 30px;
-        border: 2px solid black;
-        background-color: #080163;
+        border: var(--borde);
+        background-color: var(--color-botones);
         border-radius: 30px;
         text-decoration: none;
         cursor: pointer;
@@ -110,7 +110,7 @@
 
     /* Estilo para el boton dentro del enlace que cambia la multimedia del paso */
     .boton-pantalla button{
-        background-color: #080163;
+        background-color: var(--color-botones);
         border: none;
     }
 
@@ -151,10 +151,10 @@
         height: 100px;
         padding: 15px 25px;
         margin-top: 2.2em;
-        border: 2px solid black;
+        border: var(--borde);
         font-size: 45px;
-        background-color: #080163;
-        color: white;
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 30px;
         text-decoration: none;
         cursor: pointer;
@@ -202,8 +202,8 @@
         padding: 1em;
         margin-right: 2em;
         margin-left: 2em;
-        border: 2px solid black;
-        background-color: #080163;
+        border: var(--borde);
+        background-color: var(--color-botones);
         border-radius: 30px;
         text-decoration: none;
         cursor: pointer;

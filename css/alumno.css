@@ -47,7 +47,7 @@
     /* Estilo para todos los enlaces del main */
     main a {
         text-decoration: none;
-        color: black; 
+        color: var(--color-texto); 
     }
 
     /* Estilo para todos los enlaces del main al pasar el ratón por encima */
@@ -85,7 +85,7 @@
 
     /* Estilo para el article que muestra el alumno correspondiente al pasar el ratón por encima */
     .tarea:hover{
-        border: 2px solid black;
+        border: var(--borde);
     }
 
     /* Estilo para el div que contiene a los botones que muestran más o menos alumnos por pantalla */
@@ -99,10 +99,10 @@
     .boton-pantalla{
         display: inline-block;
         padding: 15px 25px;
-        border: 2px solid black;
+        border: var(--borde);
         font-size: 40px;
-        background-color: #080163;
-        color: white;
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 100px;
         text-decoration: none;
         cursor: pointer;
@@ -110,7 +110,7 @@
 
     /* Estilo para los botones dentro de los enlaces */
     .boton-pantalla button{
-        background-color: #080163;
+        background-color: var(--color-botones);
         border: none;
     }
 
@@ -167,9 +167,9 @@
         margin: 5px; /* Ajusta el margen entre los botones según sea necesario */
         padding: 15px 25px;
         font-size: 16px;
-        border: 2px solid black;
-        background-color: #080163;
-        color: white;
+        border: var(--borde);
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 10px; 
         cursor: pointer;
     }
@@ -194,9 +194,9 @@
         height: 200px;
         width: 250px;
         padding: 10px 20px;
-        border: 2px solid black;
-        background-color: #080163;
-        color: white;
+        border: var(--borde);
+        background-color: var(--color-botones);
+        color: var(--color-fondo);
         border-radius: 10px;
         text-transform: uppercase;
     }
@@ -207,17 +207,17 @@
     }
 
     #boton-comandas, #boton-comandas img{
-        background-color: #080163;
+        background-color: var(--color-botones);
     }
 
     #boton-comandas h3{
-        color: white;
+        color: var(--color-fondo);
         font-weight: bold;
         font-size: 28px;    
     }
 
     #boton-comandas:hover{
-        border: 2px solid black;
+        border: var(--borde);
         text-decoration: none;
     }
 
